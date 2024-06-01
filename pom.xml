@@ -57,7 +57,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <argLine>
-                        -Dfile.encoding=${project.build.sourceEncoding}
+<!--                       -Dfile.encoding=${project.build.sourceEncoding}-->
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                 </configuration>
@@ -69,7 +69,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
